@@ -22,11 +22,11 @@
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             display-name = "Base";
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &trans &trans   &trans    &trans  &trans   &trans
-&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &trans &trans   &trans    &trans  &trans   &trans
-&kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &trans &trans   &trans    &trans  &trans   &trans
-&kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &trans   &trans &trans   &trans    &trans  &trans   &trans
-                        &kp LALT &kp LGUI &mo 1  &kp SPACE  &trans   &trans &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans &trans     &trans   &trans &trans   &trans    &trans  &trans   &trans
+                        &trans   &trans   &trans &trans     &trans   &trans &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -41,11 +41,11 @@
 //                     |      |      |      |        |  |       |      |       |       |
             display-name = "Lower";
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &trans    &trans    &trans          &trans    &trans    &trans
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &trans    &trans    &trans          &trans    &trans    &trans
-&trans     &trans           &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans          &trans    &trans    &trans
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans &trans     &trans   &trans &trans   &trans    &trans  &trans   &trans
+                        &trans   &trans   &trans &trans     &trans   &trans &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -60,11 +60,11 @@
 //                     |      |      |      |        |  |       |      |       |       |
             display-name = "Raise";
             bindings = <
-&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp F1    &kp F2 &kp F3 &kp F4  &kp F5  &kp F6                       &trans      &trans    &trans    &trans   &trans    &trans
-&kp F7    &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &trans   &trans    &trans      &trans    &trans    &trans   &trans    &trans
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans                     &trans &trans   &trans    &trans  &trans   &trans
+&trans    &trans &trans &trans   &trans   &trans &trans     &trans   &trans &trans   &trans    &trans  &trans   &trans
+                        &trans   &trans   &trans &trans     &trans   &trans &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
