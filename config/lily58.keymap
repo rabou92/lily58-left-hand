@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
@@ -75,11 +76,11 @@
         niveau_controle {
             display-name = "controle";
             bindings = <
-&none  &soft_off       &bootloader  &sys_reset  &ext_power EP_TOG  &none                  &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR_ALL  &bt BT_CLR   &bt BT_PRV  &bt BT_NXT         &none                  &none  &none  &none  &none  &none  &none
-&none  &none           &none        &none       &none              &none                  &none  &none  &none  &none  &none  &none
-&none  &none           &none        &none       &none              &none  &none    &none  &none  &none  &none  &none  &none  &none
-                                    &mo 1       &mo 2              &mo 3  &none    &none  &none  &none  &none
+&none            &soft_off        &bootloader      &sys_reset       &ext_power EP_TOG  &none                  &none  &none  &none  &none  &none  &none
+&bt BT_CLR_ALL   &bt BT_CLR       &bt BT_PRV       &bt BT_NXT       &none              &none                  &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &none                  &none  &none  &none  &none  &none  &none
+&none            &none            &none            &none            &none              &none  &none    &none  &none  &none  &none  &none  &none  &none
+                                                   &mo 1            &mo 2              &mo 3  &none    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
