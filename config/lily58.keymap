@@ -11,6 +11,17 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+        Brace: Brace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACE";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,11 +55,11 @@
 
             display-name = "Symbole";
             bindings = <
-&kp ESC    &kp F6          &kp F7            &kp F8     &kp F9    &kp F10                        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp SEMI        &kp COLON         &kp STAR   &kp AMPS  &kp QMARK                      &none  &none  &none  &none  &none  &none
-&kp RET    &kp UNDER       &kp AT            &kp MINUS  &kp EXCL  &kp FSLH                       &none  &none  &none  &none  &none  &none
-&kp LALT   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LPAR   &kp LT    &kp DQT    &kp LSHFT    &none  &none  &none  &none  &none  &none  &none
-                                             &mo 1      &mo 3     &mo 2      &kp SPACE    &none  &none  &none  &none
+&kp ESC    &kp F6            &kp F7                &kp F8         &kp F9             &kp F10                        &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp SEMI          &kp COLON             &kp STAR       &kp AMPS           &kp QMARK                      &none  &none  &none  &none  &none  &none
+&kp RET    &kp UNDER         &kp AT                &kp MINUS      &kp EXCL           &kp FSLH                       &none  &none  &none  &none  &none  &none
+&kp LALT   &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp DOUBLE_QUOTES  &none      &kp LSHFT    &none  &none  &none  &none  &none  &none  &none
+                                                   &mo 1          &mo 3              &mo 2      &kp SPACE    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
