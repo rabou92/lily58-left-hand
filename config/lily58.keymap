@@ -25,11 +25,11 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none    &none  &none  &none  &none
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                        &none  &none  &none  &none  &none  &none
+&kp P      &kp W     &kp R     &kp A      &kp F   &kp D                         &none  &none  &none  &none  &none  &none
+&kp T      &kp H     &kp E     &kp O      &kp Y   &kp S                         &none  &none  &none  &none  &none  &none
+&kp ENTER  &kp LALT  &kp RALT  &kp LCTRL  &mo 2   &kp LGUI  &kp LSHFT    &none  &none  &none  &none  &none  &none  &none
+                               &mo 1      &mo 3   &mo 4     &kp SPACE    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -38,11 +38,24 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none    &none  &none  &none  &none
+&none  &kp N6     &kp N7    &kp N8  &kp N9    &kp N0                            &none  &none  &none  &none  &none  &none
+&kp J  &kp M      &kp B     &kp V   &kp C     &kp L                             &none  &none  &none  &none  &none  &none
+&kp Z  &kp Q      &kp X     &kp G   &kp K     &kp N                             &none  &none  &none  &none  &none  &none
+&kp U  &kp LCTRL  &kp RALT  &kp I   &kp LALT  &kp BSPC  &kp LSHFT    &kp SPACE  &none  &none  &none  &none  &none  &none
+                            &none   &none     &none     &none        &none      &none  &none  &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        niveau_fonction {
+            display-name = "fonction";
+            bindings = <
+&kp F1        &kp F2    &kp F3    &kp F4     &none  &kp F5                     &none  &none  &none  &none  &none  &none
+&kp F6        &kp F7    &kp F8    &kp F9     &none  &kp F10                    &none  &none  &none  &none  &none  &none
+&kp F11       &kp F12   &kp UP    &kp DEL    &none  &kp PG_UP                  &none  &none  &none  &none  &none  &none
+&kp CAPSLOCK  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp PG_DN  &none    &none  &none  &none  &none  &none  &none  &none
+                                  &none      &none  &none      &none    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -51,31 +64,18 @@
         niveau_symbole {
             display-name = "Symbole";
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none    &none  &none  &none  &none
+&kp SEMI  &kp COMMA  &kp COLON  &kp EXCL   &kp PERCENT  &kp STAR                      &none  &none  &none  &none  &none  &none
+&kp DLLR  &none      &kp RPAR   &kp EQUAL  &none        &none                         &none  &none  &none  &none  &none  &none
+&none     &none      &none      &none      &none        &none                         &none  &none  &none  &none  &none  &none
+&none     &none      &kp LCTRL  &none      &kp RALT     &none     &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
+                                &none      &none        &none     &none        &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        niveau_symbole_bis {
-            display-name = "Symbole bis";
-            bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &none    &none  &none  &none  &none
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        niveau_controle {
-            display-name = "Controle";
+        niveau_parametre {
+            display-name = "parametre";
             bindings = <
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
