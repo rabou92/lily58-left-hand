@@ -13,17 +13,28 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+        Shift: Shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT";
+            #binding-cells = <2>;
+            bindings = <&caps_word>, <&sk>;
+
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                        &none  &none  &none  &none  &none  &none
-&kp P      &kp W     &kp R     &kp A      &kp F   &kp D                         &none  &none  &none  &none  &none  &none
-&kp T      &kp H     &kp E     &kp O      &kp Y   &kp S                         &none  &none  &none  &none  &none  &none
-&kp ENTER  &kp LALT  &kp RALT  &kp LCTRL  &mo 2   &kp LGUI  &kp LSHFT    &none  &none  &none  &none  &none  &none  &none
-                               &mo 1      &mo 3   &tog 4    &kp SPACE    &none  &none  &none  &none
+&kp ESC    &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                             &none  &none  &none  &none  &none  &none
+&kp P      &kp W     &kp R     &kp A      &kp F   &kp D                              &none  &none  &none  &none  &none  &none
+&kp T      &kp H     &kp E     &kp O      &kp Y   &kp S                              &none  &none  &none  &none  &none  &none
+&kp ENTER  &kp LALT  &kp RALT  &kp LCTRL  &mo 2   &kp LGUI  &Shift 0 LSHFT    &none  &none  &none  &none  &none  &none  &none
+                               &to 1      &to 3   &to 4     &kp SPACE         &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -36,7 +47,7 @@
 &kp J  &kp SEMI   &kp B     &kp V   &kp C     &kp L                             &none  &none  &none  &none  &none  &none
 &kp Z  &kp Q      &kp X     &kp G   &kp K     &kp N                             &none  &none  &none  &none  &none  &none
 &kp U  &kp LCTRL  &kp RALT  &kp I   &kp LALT  &kp BSPC  &kp LSHFT    &kp SPACE  &none  &none  &none  &none  &none  &none
-                            &none   &none     &none     &none        &none      &none  &none  &none
+                            &to 0   &none     &none     &none        &none      &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -48,7 +59,7 @@
 &kp F1        &kp F2    &kp F3    &kp F4     &none  &kp F5                     &none  &none  &none  &none  &none  &none
 &kp F6        &kp F7    &kp F8    &kp F9     &none  &kp F10                    &none  &none  &none  &none  &none  &none
 &kp F11       &kp F12   &kp UP    &kp DEL    &none  &kp PG_UP                  &none  &none  &none  &none  &none  &none
-&kp CAPSLOCK  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &kp PG_DN  &none    &none  &none  &none  &none  &none  &none  &none
+&kp CAPSLOCK  &kp LEFT  &kp DOWN  &kp RIGHT  &to 0  &kp PG_DN  &none    &none  &none  &none  &none  &none  &none  &none
                                   &none      &none  &none      &none    &none  &none  &none  &none
             >;
 
@@ -62,7 +73,7 @@
 &kp DLLR   &none      &kp RPAR   &kp EQUAL  &none        &none                         &none  &none  &none  &none  &none  &none
 &none      &none      &none      &none      &none        &none                         &none  &none  &none  &none  &none  &none
 &none      &none      &kp LCTRL  &none      &kp RALT     &none     &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
-                                 &none      &none        &none     &none        &none  &none  &none  &none
+                                 &none      &to 0        &none     &none        &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -71,11 +82,11 @@
         niveau_parametre {
             display-name = "parametre";
             bindings = <
-&none  &none              &sys_reset    &bootloader   &soft_off        &none                   &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR_ALL     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT       &none                   &none  &none  &none  &none  &none  &none
-&none  &ext_power EP_TOG  &out OUT_USB  &out OUT_TOG  &out OUT_BLE     &none                   &none  &none  &none  &none  &none  &none
-&none  &none              &bl BL_OFF    &bl BL_ON     &rgb_ug RGB_TOG  &none   &none    &none  &none  &none  &none  &none  &none  &none
-                                        &none         &none            &tog 4  &none    &none  &none  &none  &none
+&none  &none              &sys_reset    &bootloader   &soft_off        &none                  &none  &none  &none  &none  &none  &none
+&none  &bt BT_CLR_ALL     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT       &none                  &none  &none  &none  &none  &none  &none
+&none  &ext_power EP_TOG  &out OUT_USB  &out OUT_TOG  &out OUT_BLE     &none                  &none  &none  &none  &none  &none  &none
+&none  &none              &bl BL_OFF    &bl BL_ON     &rgb_ug RGB_TOG  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                                        &none         &none            &to 0  &none    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
