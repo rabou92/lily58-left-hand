@@ -9,17 +9,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    behaviors {
-        Brace: Brace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BRACE";
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
