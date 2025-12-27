@@ -30,9 +30,9 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp A     &kp Z     &kp E     &kp R    &kp T                                &none  &none  &none  &none  &none  &none
-&to 5      &kp Q     &kp S     &kp D     &kp F    &kp L                                &none  &none  &none  &none  &none  &none
-&kp TAB    &kp W     &kp X     &kp C     &kp V    &kp B                                &none  &none  &none  &none  &none  &none
+&kp ESC    &kp Q     &kp Z     &kp E     &kp R    &kp B                                &none  &none  &none  &none  &none  &none
+&to 5      &kp A     &kp S     &kp D     &kp F    &kp L                                &none  &none  &none  &none  &none  &none
+&kp TAB    &kp Z     &kp X     &kp C     &kp V    &kp B                                &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp RALT  &kp LGUI  &kp LALT  &kp DEL  &kp ENTER  &Shift 0 LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 1     &to 2    &to 4      &kp SPACE          &none  &none  &none  &none
             >;
@@ -43,11 +43,11 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&kp ESC    &kp H     &kp I     &kp J     &kp K          &kp L                                    &none  &none  &none  &none  &none  &none
-&to 6      &kp M     &kp N     &kp O     &kp P          &kp U                                    &none  &none  &none  &none  &none  &none
-&kp TAB    &kp Y     &kp G     &kp L     &kp O          &kp I                                    &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp RALT  &kp LGUI  &kp LALT  &kp BACKSPACE  &kp ENTER  &Shift 0 LSHIFT    &kp SPACE  &none  &none  &none  &none  &none  &none
-                               &to 3     &to 4          &kp TAB    &kp SPACE          &none      &none  &none  &none
+&kp ESC    &kp H          &kp I     &kp J     &kp K          &kp L                                    &none  &none  &none  &none  &none  &none
+&to 6      &kp SEMICOLON  &kp N     &kp O     &kp P          &kp U                                    &none  &none  &none  &none  &none  &none
+&kp TAB    &kp Y          &kp G     &none     &none          &none                                    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp RALT       &kp LGUI  &kp LALT  &kp BACKSPACE  &kp ENTER  &Shift 0 LSHIFT    &kp SPACE  &none  &none  &none  &none  &none  &none
+                                    &to 3     &to 4          &kp TAB    &kp SPACE          &none      &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -96,10 +96,10 @@
             display-name = "parametre";
             bindings = <
 &none  &none              &sys_reset    &bootloader   &soft_off        &none                  &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR_ALL     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT       &none                  &none  &none  &none  &none  &none  &none
+&to 5  &bt BT_CLR_ALL     &bt BT_CLR    &bt BT_PRV    &bt BT_NXT       &none                  &none  &none  &none  &none  &none  &none
 &none  &ext_power EP_TOG  &out OUT_USB  &out OUT_TOG  &out OUT_BLE     &none                  &none  &none  &none  &none  &none  &none
 &none  &none              &bl BL_OFF    &bl BL_ON     &rgb_ug RGB_TOG  &none  &none    &none  &none  &none  &none  &none  &none  &none
-                                        &none         &none            &to 0  &none    &none  &none  &none  &none
+                                        &none         &none            &none  &none    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
