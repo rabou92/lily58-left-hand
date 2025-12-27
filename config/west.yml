@@ -10,7 +10,7 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: zmk-locales
+    - name: zmkfr
       remote: zmk-locales
   self:
     path: config
