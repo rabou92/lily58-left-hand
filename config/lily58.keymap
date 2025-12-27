@@ -55,11 +55,11 @@
         niveau_nombre {
             display-name = "Nombre";
             bindings = <
-&none     &none      &kp FR_N7     &kp FR_N8  &kp FR_N9      &kp FR_SLASH                       &none  &none  &none  &none  &none  &none
-&none     &none      &kp FR_N4     &kp FR_N5  &kp FR_N6      &kp FR_STAR                        &none  &none  &none  &none  &none  &none
-&kp LALT  &kp LCTRL  &kp NUMBER_1  &kp FR_N2  &kp FR_N3      &kp FR_MINUS                       &none  &none  &none  &none  &none  &none
-&kp RALT  &sl 3      &kp FR_DOT    &kp N0     &kp BACKSPACE  &kp FR_PLUS   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                                   &none      &to 0          &to 1         &kp SPACE     &none  &none  &none  &none
+&none     &none      &kp N7      &kp N8  &kp N9         &kp FR_SLASH                       &none  &none  &none  &none  &none  &none
+&none     &none      &kp N4      &kp N5  &kp N6         &kp FR_STAR                        &none  &none  &none  &none  &none  &none
+&kp LALT  &kp LCTRL  &kp N1      &kp N3  &kp FR_N3      &kp FR_MINUS                       &none  &none  &none  &none  &none  &none
+&kp RALT  &sl 3      &kp FR_DOT  &kp N0  &kp BACKSPACE  &kp FR_PLUS   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                                 &none   &to 0          &to 1         &kp SPACE     &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
