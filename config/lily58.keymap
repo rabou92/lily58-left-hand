@@ -83,7 +83,7 @@
             bindings = <
 &kp FR_EXCL        &kp FR_DOLLAR       &kp FR_U_GRAVE  &kp FR_CARET  &kp PERCENT   &kp FR_LESS_THAN                      &none  &none  &none  &none  &none  &none
 &kp FR_LEFT_BRACE  &kp FR_RIGHT_BRACE  &kp FR_LPAR     &kp FR_RPAR   &kp FR_EQUAL  &none                                 &none  &none  &none  &none  &none  &none
-&kp FR_DOT         &kp FR_COMMA        &kp FR_COLON    &kp FR_SEMI   &none         &none                                 &none  &none  &none  &none  &none  &none
+&kp FR_COMMA       &kp FR_COLON        &kp FR_SEMI     &none         &none         &none                                 &none  &none  &none  &none  &none  &none
 &none              &none               &kp LCTRL       &none         &none         &kp RALT          &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
                                                        &to 5         &to 1         &to 0             &none        &none  &none  &none  &none
             >;
