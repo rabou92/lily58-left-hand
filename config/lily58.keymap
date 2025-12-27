@@ -80,11 +80,11 @@
         niveau_symbole {
             display-name = "Symbole";
             bindings = <
-&kp COMMA  &kp COMMA  &kp COLON  &kp EXCL   &kp PERCENT  &kp STAR                      &none  &none  &none  &none  &none  &none
-&kp DLLR   &none      &kp RPAR   &kp EQUAL  &none        &none                         &none  &none  &none  &none  &none  &none
-&none      &none      &none      &none      &none        &none                         &none  &none  &none  &none  &none  &none
-&none      &none      &kp LCTRL  &none      &kp RALT     &none     &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
-                                 &to 5      &to 1        &to 0     &none        &none  &none  &none  &none
+&kp EXCL          &kp DLLR           &kp PERCENT           &kp CARET              &kp PERCENT  &kp LESS_THAN                      &none  &none  &none  &none  &none  &none
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none        &none                              &none  &none  &none  &none  &none  &none
+&none             &none              &none                 &none                  &none        &none                              &none  &none  &none  &none  &none  &none
+&none             &none              &kp LCTRL             &none                  &none        &kp RALT       &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
+                                                           &to 5                  &to 1        &to 0          &none        &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
