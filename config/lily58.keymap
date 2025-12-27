@@ -29,11 +29,11 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q     &kp W     &kp E         &kp R    &kp B                                &none  &none  &none  &none  &none  &none
-&to 6      &kp A     &kp S     &kp D         &kp F    &kp L                                &none  &none  &none  &none  &none  &none
-&kp TAB    &kp Z     &kp X     &kp C         &kp V    &kp T                                &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp RALT  &kp LALT  &kp LEFT_GUI  &kp DEL  &kp ENTER  &Shift 0 LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                               &to 1         &to 2    &to 4      &kp SPACE          &none  &none  &none  &none
+&kp ESC    &kp FR_A  &kp FR_Z  &kp FR_E      &kp FR_R  &kp FR_B                             &none  &none  &none  &none  &none  &none
+&to 6      &kp FR_Q  &kp FR_S  &kp FR_D      &kp FR_F  &kp FR_L                             &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_W  &kp FR_X  &kp FR_C      &kp FR_V  &kp FR_T                             &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp RALT  &kp LALT  &kp LEFT_GUI  &kp DEL   &kp ENTER  &Shift 0 LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                               &to 1         &to 2     &to 4      &kp SPACE          &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,11 +42,11 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&kp ESC    &kp I          &kp H     &kp J         &kp K          &kp L                                    &none  &none  &none  &none  &none  &none
-&to 7      &kp SEMICOLON  &kp N     &kp O         &kp P          &kp U                                    &none  &none  &none  &none  &none  &none
-&kp TAB    &kp Y          &kp G     &none         &kp UP         &kp DOWN                                 &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp RALT       &kp LALT  &kp LEFT_GUI  &kp BACKSPACE  &kp ENTER  &Shift 0 LSHIFT    &kp SPACE  &none  &none  &none  &none  &none  &none
-                                    &to 0         &to 4          &to 2      &kp SPACE          &none      &none  &none  &none
+&kp ESC    &kp FR_I  &kp FR_H  &kp FR_J      &kp FR_K       &kp FR_L                                 &none  &none  &none  &none  &none  &none
+&to 7      &kp FR_M  &kp FR_N  &kp FR_O      &kp FR_P       &kp FR_U                                 &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_Y  &kp G     &none         &kp UP         &kp DOWN                                 &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp RALT  &kp LALT  &kp LEFT_GUI  &kp BACKSPACE  &kp ENTER  &Shift 0 LSHIFT    &kp SPACE  &none  &none  &none  &none  &none  &none
+                               &to 0         &to 4          &to 2      &kp SPACE          &none      &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -55,11 +55,11 @@
         niveau_nombre {
             display-name = "Nombre";
             bindings = <
-&none     &none      &kp N7   &kp N8  &kp N9         &kp FSLH                        &none  &none  &none  &none  &none  &none
-&none     &none      &kp N4   &kp N5  &kp N6         &kp STAR                        &none  &none  &none  &none  &none  &none
-&kp LALT  &kp LCTRL  &kp N1   &kp N2  &kp N3         &kp MINUS                       &none  &none  &none  &none  &none  &none
-&kp RALT  &sl 3      &kp DOT  &kp N0  &kp BACKSPACE  &kp PLUS   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                              &none   &to 0          &to 1      &kp SPACE     &none  &none  &none  &none
+&none     &none      &kp FR_N7   &kp FR_N8  &kp FR_N9      &kp FR_SLASH                       &none  &none  &none  &none  &none  &none
+&none     &none      &kp FR_N4   &kp FR_N5  &kp FR_N6      &kp FR_STAR                        &none  &none  &none  &none  &none  &none
+&kp LALT  &kp LCTRL  &kp FR_N1   &kp FR_N2  &kp FR_N3      &kp FR_MINUS                       &none  &none  &none  &none  &none  &none
+&kp RALT  &sl 3      &kp FR_DOT  &kp FR_N0  &kp BACKSPACE  &kp FR_PLUS   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                                 &none      &to 0          &to 1         &kp SPACE     &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
