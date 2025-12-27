@@ -56,11 +56,11 @@
         niveau_nombre {
             display-name = "Nombre";
             bindings = <
-&none  &kp N1  &kp N2  &kp N3  &kp N4  &none                  &none  &none  &none  &none  &none  &none
-&none  &kp N5  &kp N6  &kp N7  &kp N8  &none                  &none  &none  &none  &none  &none  &none
-&none  &none   &kp N9  &kp N0  &none   &none                  &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none   &none   &none  &none    &none  &none  &none  &none  &none  &none  &none
-                       &none   &to 0   &to 1  &none    &none  &none  &none  &none
+&none     &kp N7     &kp N7   &kp N8  &kp N9         &kp FSLH                       &none  &none  &none  &none  &none  &none
+&none     &kp N4     &kp N4   &kp N5  &kp N6         &kp STAR                       &none  &none  &none  &none  &none  &none
+&kp LALT  &kp LCTRL  &kp N1   &kp N2  &kp N3         &kp MINUS                      &none  &none  &none  &none  &none  &none
+&none     &none      &kp DOT  &kp N0  &kp BACKSPACE  &kp PLUS   &none        &none  &none  &none  &none  &none  &none  &none
+                              &none   &to 0          &to 1      &kp SPACE    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -109,7 +109,7 @@
             display-name = "jeux";
             bindings = <
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&to 0  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
                      &none  &none  &none  &none    &none  &none  &none  &none
