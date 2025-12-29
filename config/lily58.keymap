@@ -31,7 +31,7 @@
             bindings = <
 &kp ESC    &kp RALT  &kp LALT  &kp LEFT_GUI  &kp DEL   &kp ENTER                       &none  &none  &none  &none  &none  &none
 &kp TAB    &kp FR_A  &kp FR_Z  &kp FR_E      &kp FR_R  &kp FR_T                        &none  &none  &none  &none  &none  &none
-&to 5      &kp FR_Q  &kp FR_S  &kp FR_C      &kp FR_F  &kp FR_L                        &none  &none  &none  &none  &none  &none
+&to 5      &kp FR_Q  &kp FR_S  &kp FR_D      &kp FR_F  &kp FR_L                        &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp FR_W  &kp FR_X  &kp FR_C      &kp FR_V  &kp FR_B   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 1         &to 2     &to 4      &kp SPACE     &none  &none  &none  &none
             >;
