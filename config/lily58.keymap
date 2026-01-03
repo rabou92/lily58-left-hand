@@ -12,17 +12,6 @@
 #include "keys_fr.h"
 
 / {
-    behaviors {
-        Shift: Shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT";
-            #binding-cells = <2>;
-            bindings = <&caps_word>, <&sk>;
-
-            tapping-term-ms = <1200>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
