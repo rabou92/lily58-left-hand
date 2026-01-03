@@ -31,11 +31,11 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&kp ESC    &kp B     &kp G     &kp Y     &kp Q    &kp U                           &none  &none  &none  &none  &none  &none
-&to 6      &kp Z     &kp H     &kp J     &kp K    &kp L                           &none  &none  &none  &none  &none  &none
-&kp TAB    &kp X     &kp V     &kp Z     &kp UP   &kp DOWN                        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp DEL  &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                               &to 0     &to 4    &to 2      &kp SPACE     &none  &none  &none  &none
+&kp ESC    &kp FR_B  &kp FR_G  &kp FR_Y  &kp FR_Q  &kp FR_U                        &none  &none  &none  &none  &none  &none
+&to 6      &kp FR_Z  &kp FR_H  &kp FR_J  &kp FR_K  &kp FR_L                        &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_X  &kp FR_V  &kp FR_W  &kp UP    &kp DOWN                        &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp DEL   &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                               &to 0     &to 4     &to 2      &kp SPACE     &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
