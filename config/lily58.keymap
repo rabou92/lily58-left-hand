@@ -18,9 +18,9 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp F     &kp P     &kp I     &kp T          &kp S                           &none  &none  &none  &none  &none  &none
-&to 5      &kp C     &kp E     &kp R     &kp A          &kp L                           &none  &none  &none  &none  &none  &none
-&kp TAB    &kp O     &kp N     &kp U     &kp D          &kp M                           &none  &none  &none  &none  &none  &none
+&kp ESC    &kp FR_F  &kp FR_P  &kp FR_I  &kp FR_T       &kp FR_S                        &none  &none  &none  &none  &none  &none
+&to 5      &kp FR_C  &kp FR_E  &kp FR_R  &kp FR_A       &kp FR_L                        &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_O  &kp FR_N  &kp FR_U  &kp FR_D       &kp FR_D                        &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp BACKSPACE  &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 1     &to 2          &to 4      &kp SPACE     &none  &none  &none  &none
             >;
