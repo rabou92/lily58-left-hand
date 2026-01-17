@@ -18,9 +18,9 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp FR_A  &kp FR_M  &kp FR_E  &kp FR_R       &kp FR_I                        &none  &none  &none  &none  &none  &none
-&to 5      &kp FR_P  &kp FR_S  &kp FR_D  &kp FR_U       &kp FR_L                        &none  &none  &none  &none  &none  &none
-&kp TAB    &kp FR_O  &kp FR_N  &kp FR_C  &kp FR_V       &kp FR_T                        &none  &none  &none  &none  &none  &none
+&kp ESC    &kp FR_L  &kp FR_C  &kp FR_P  &kp FR_F       &kp FR_M                        &none  &none  &none  &none  &none  &none
+&to 5      &kp FR_O  &kp FR_S  &kp FR_N  &kp FR_T       &kp FR_R                        &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_Q  &kp FR_A  &kp FR_E  &kp FR_I       &kp FR_U                        &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp BACKSPACE  &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 1     &to 2          &to 4      &kp SPACE     &none  &none  &none  &none
             >;
@@ -31,9 +31,9 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&kp ESC    &kp FR_B  &kp FR_G  &kp FR_Y  &kp FR_Q  &kp FR_U                        &none  &none  &none  &none  &none  &none
-&to 6      &kp FR_F  &kp FR_H  &kp FR_J  &kp FR_K  &kp FR_L                        &none  &none  &none  &none  &none  &none
-&kp TAB    &kp FR_X  &kp FR_Z  &kp FR_W  &kp UP    &kp DOWN                        &none  &none  &none  &none  &none  &none
+&kp ESC    &kp FR_J  &kp FR_K  &kp FR_W  &kp FR_E  &kp FR_N                        &none  &none  &none  &none  &none  &none
+&to 6      &kp FR_K  &kp FR_V  &kp FR_D  &kp FR_G  &kp FR_B                        &none  &none  &none  &none  &none  &none
+&kp TAB    &kp FR_X  &kp FR_H  &kp FR_Y  &kp FR_T  &kp FR_S                        &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp DEL   &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 0     &to 4     &to 2      &kp SPACE     &none  &none  &none  &none
             >;
