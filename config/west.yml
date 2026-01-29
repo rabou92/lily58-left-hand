@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-- name: mschmitt
+    - name: mschmitt
       url-base: https://github.com/m-schmitt
   projects:
     - name: zmk
