@@ -109,11 +109,11 @@
         niveau_hollow_knight {
             display-name = "Hollow Knight";
             bindings = <
-&none    &none     &none     &none     &none      &none                        &none  &none  &none  &none  &none  &none
-&none    &none     &kp FR_C  &kp UP    &kp FR_S   &kp FR_X                     &none  &none  &none  &none  &none  &none
-&kp TAB  &kp FR_A  &kp LEFT  &kp DOWN  &kp RIGHT  &kp FR_I                     &none  &none  &none  &none  &none  &none
-&none    &none     &none     &none     &none      &none     &to 0       &none  &none  &none  &none  &none  &none  &none
-                             &none     &none      &kp FR_D  &kp FR_Z    &none  &none  &none  &none
+&none     &kp FR_D  &kp FR_S  &kp ESC   &kp TAB    &none                        &none  &none  &none  &none  &none  &none
+&kp FR_A  &none     &none     &kp UP    &none      &kp FR_F                     &none  &none  &none  &none  &none  &none
+&kp FR_C  &kp FR_X  &kp LEFT  &kp DOWN  &kp RIGHT  &none                        &none  &none  &none  &none  &none  &none
+&none     &none     &none     &none     &none      &none     &to 0       &none  &none  &none  &none  &none  &none  &none
+                              &none     &none      &kp FR_I  &kp FR_Z    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
