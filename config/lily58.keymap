@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -16,9 +17,9 @@
         niveau_base {
             display-name = "Base";
             bindings = <
-&kp ESC    &none  &none  &none  &none       &none                        &none  &none  &none  &none  &none  &none
-&to 5      &none  &none  &none  &none       &none                        &none  &none  &none  &none  &none  &none
-&kp TAB    &none  &none  &none  &none       &none                        &none  &none  &none  &none  &none  &none
+&kp ESC    &kp N     &kp D     &kp O     &kp M          &kp U                           &none  &none  &none  &none  &none  &none
+&to 5      &kp R     &kp T     &kp E     &kp I          &kp V                           &none  &none  &none  &none  &none  &none
+&kp TAB    &kp L     &kp S     &kp A     &kp P          &kp G                           &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp BACKSPACE  &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
                                &to 1     &to 2          &to 4      &kp SPACE     &none  &none  &none  &none
             >;
@@ -29,11 +30,11 @@
         niveau_second {
             display-name = "Second";
             bindings = <
-&kp ESC    &none  &none  &none  &none  &none                        &none  &none  &none  &none  &none  &none
-&to 6      &none  &none  &none  &none  &none                        &none  &none  &none  &none  &none  &none
-&kp TAB    &none  &none  &none  &none  &none                        &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp DEL   &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                               &to 0     &to 4     &to 2      &kp SPACE     &none  &none  &none  &none
+&kp ESC    &kp I     &kp H     &kp E     &kp F    &kp S                           &none  &none  &none  &none  &none  &none
+&to 6      &kp Q     &kp Z     &kp C     &kp Y    &kp X                           &none  &none  &none  &none  &none  &none
+&kp TAB    &kp J     &kp W     &kp K     &kp B    &kp V                           &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp RALT  &kp LALT  &kp LGUI  &kp DEL  &kp ENTER  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                               &to 0     &to 4    &to 2      &kp SPACE     &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,11 +43,11 @@
         niveau_nombre {
             display-name = "Nombre";
             bindings = <
-&none     &none      &kp N7      &kp N8  &kp N9         &none                       &none  &none  &none  &none  &none  &none
-&none     &none      &kp N4      &kp N5  &kp N6         &none                        &none  &none  &none  &none  &none  &none
-&kp LALT  &kp LCTRL  &kp N1      &kp N2  &kp N3         &none                       &none  &none  &none  &none  &none  &none
-&kp RALT  &sl 3      &none  &kp N0  &kp BACKSPACE  &none   &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
-                                 &none   &to 0          &to 1         &kp SPACE     &none  &none  &none  &none
+&none     &none      &kp N7  &kp N8  &kp N9         &none                       &none  &none  &none  &none  &none  &none
+&none     &none      &kp N4  &kp N5  &kp N6         &none                       &none  &none  &none  &none  &none  &none
+&kp LALT  &kp LCTRL  &kp N1  &kp N2  &kp N3         &none                       &none  &none  &none  &none  &none  &none
+&kp RALT  &sl 3      &none   &kp N0  &kp BACKSPACE  &none  &kp LSHIFT    &none  &none  &none  &none  &none  &none  &none
+                             &none   &to 0          &to 1  &kp SPACE     &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -68,11 +69,11 @@
         niveau_symbole {
             display-name = "Symbole";
             bindings = <
-&none        &none       &none  &none  &kp PERCENT   &none                         &none  &none  &none  &none  &none  &none
-&none  &none  &none     &none   &none  &none                                    &none  &none  &none  &none  &none  &none
-&none       &none        &none     &none         &none         &none                                    &none  &none  &none  &none  &none  &none
-&none              &none               &kp LCTRL       &none         &none         &kp RALT          &kp RSHFT       &none  &none  &none  &none  &none  &none  &none
-                                                       &none         &to 1         &to 0             &none    &none  &none  &none  &none
+&none  &none  &none      &none  &kp PERCENT  &none                         &none  &none  &none  &none  &none  &none
+&none  &none  &none      &none  &none        &none                         &none  &none  &none  &none  &none  &none
+&none  &none  &none      &none  &none        &none                         &none  &none  &none  &none  &none  &none
+&none  &none  &kp LCTRL  &none  &none        &kp RALT  &kp RSHFT    &none  &none  &none  &none  &none  &none  &none
+                         &none  &to 1        &to 0     &none        &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -107,11 +108,11 @@
         niveau_hollow_knight {
             display-name = "Hollow Knight";
             bindings = <
-&none     &none  &none  &kp ESC   &kp TAB    &none                        &none  &none  &none  &none  &none  &none
-&none  &none     &none     &kp UP    &none      &none                     &none  &none  &none  &none  &none  &none
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none                        &none  &none  &none  &none  &none  &none
-&none     &none     &none     &none     &none      &none     &to 0       &none  &none  &none  &none  &none  &none  &none
-                              &none     &none      &none  &none    &none  &none  &none  &none
+&none  &none  &none     &kp ESC   &kp TAB    &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none     &kp UP    &none      &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none     &none     &none      &none  &to 0    &none  &none  &none  &none  &none  &none  &none
+                        &none     &none      &none  &none    &none  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
