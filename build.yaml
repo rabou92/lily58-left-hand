@@ -13,6 +13,6 @@
 #
 ---
 include:
-  - board: nice_nano@2.0.0
-    shield:  nice_view_adapter lily58_left nice_view
+  - board: nice_nano//zmk
+    shield:  lily58_left
     snippet: studio-rpc-usb-uart
